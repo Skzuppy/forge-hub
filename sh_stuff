@@ -1,6 +1,18 @@
 
 if _G.HopInterval and _G.HopBtn == "false" then
     wait(tonumber(_G.HopInterval))
+    local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+    if teleportFunc then
+        teleportFunc([[
+            repeat
+                wait()
+            until game:IsLoaded()
+            wait(1)
+            _G.HopBtn = ]]..tostring(_G.HopBtn)..[[
+            _G.HopInterval = ]]..tostring(_G.HopInterval)..[[
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/refs/heads/main/sh_stuff"))()
+        ]])
+    end
     repeat
         local servers = {}
         local req = request({Url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", game.PlaceId)})
@@ -98,6 +110,18 @@ TextLabel_2.TextWrapped = true
 
 TextButton.Activated:Connect(function()
     TextButton.Text = "Called for Teleport!"
+    local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+    if teleportFunc then
+        teleportFunc([[
+            repeat
+                wait()
+            until game:IsLoaded()
+            wait(1)
+            _G.HopBtn = ]]..tostring(_G.HopBtn)..[[
+            _G.HopInterval = ]]..tostring(_G.HopInterval)..[[
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/refs/heads/main/sh_stuff"))()
+        ]])
+    end
     repeat
         local servers = {}
         local req = request({Url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", game.PlaceId)})
