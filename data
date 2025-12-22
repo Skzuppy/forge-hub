@@ -1,7 +1,7 @@
 local data = readfile("LRM_Auth")
 
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-local function base64encode(data)
+local function b46(data)
 	return ((data:gsub('.', function(x)
 		local r,binary='',x:byte()
 		for i=8,1,-1 do
@@ -18,4 +18,4 @@ local function base64encode(data)
 	end)..({ '', '==', '=' })[#data%3+1])
 end
 
-setclipboard(base64encode(data))
+setclipboard(b46(data))
