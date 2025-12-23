@@ -17,20 +17,17 @@ local function generateRandomString(length)
 end
 
 local Custom = {} do
--- Primary brand / highlight (warm amber)
-Custom.ColorRGB = Color3.fromRGB(255, 165, 90)
 
--- Accent / danger / important actions (deep crimson)
-Custom.AccentColor = Color3.fromRGB(190, 60, 60)
+Custom.ColorRGB = Color3.fromRGB(245, 158, 66)
 
--- Secondary highlight (muted warm blue for contrast)
-Custom.DarkBlue = Color3.fromRGB(70, 120, 190)
+Custom.AccentColor = Color3.fromRGB(190, 45, 45)
 
--- Main background (soft dark navy, not pure black)
-Custom.BackgroundDark = Color3.fromRGB(16, 18, 30)
+Custom.DarkBlue = Color3.fromRGB(72, 118, 255)
 
--- Frames / borders (cool light gray, not pure white)
-Custom.FrameDark = Color3.fromRGB(220, 225, 235)
+Custom.BackgroundDark = Color3.fromRGB(18, 20, 32)
+
+Custom.FrameDark = Color3.fromRGB(230, 232, 238)
+
 
 
 
