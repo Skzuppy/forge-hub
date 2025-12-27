@@ -18,15 +18,17 @@ end
 
 local Custom = {} do
 
-Custom.ColorRGB = Color3.fromRGB(245, 158, 66)
 
-Custom.AccentColor = Color3.fromRGB(190, 45, 45)
 
-Custom.DarkBlue = Color3.fromRGB(72, 118, 255)
+Custom.ColorRGB = Color3.fromRGB(200, 32, 32)
 
-Custom.BackgroundDark = Color3.fromRGB(18, 20, 32)
+Custom.AccentColor = Color3.fromRGB(34, 139, 34)
 
-Custom.FrameDark = Color3.fromRGB(230, 232, 238)
+Custom.DarkBlue = Color3.fromRGB(18, 52, 86)
+
+Custom.BackgroundDark = Color3.fromRGB(18, 18, 18)
+
+Custom.FrameDark = Color3.fromRGB(235, 235, 235)
 
 
 
