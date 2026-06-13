@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Forge Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    :root {
+      --bg:        #0e0e10;
+      --surface:   #16161a;
+      --border:    #252529;
+      --orange:    #e87b2a;
+      --gold:      #c9922a;
+      --text:      #d4d4d8;
+      --muted:     #71717a;
+      --heading:   #fafafa;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--orange), var(--gold));
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      color: var(--heading);
+      letter-spacing: 0.01em;
+    }
+
+    .logo-text span {
+      color: var(--orange);
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+
+    .page-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      color: var(--heading);
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .page-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .notice {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-bottom: 3rem;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.5rem;
+    }
+
+    .section h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      color: var(--heading);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .section p {
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0.75rem;
+    }
+
+    .section ul li {
+      padding: 0.3rem 0 0.3rem 1.1rem;
+      position: relative;
+      color: var(--text);
+    }
+
+    .section ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 600;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.75rem 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .page-title { font-size: 1.6rem; }
+      main { padding: 2.5rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-mark"></div>
+      <span class="logo-text">Forge<span>Hub</span></span>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Terms of Use</h1>
+    <p class="page-meta">Last updated: June 2025 &nbsp;·&nbsp; Applies to all users of Forge Hub's software</p>
+
+    <div class="notice">
+      By executing or using Forge Hub's software in any form, you confirm that you have read and agree to these terms in full. If you do not agree, do not use the software.
+    </div>
+
+    <!-- 1 -->
+    <div class="section">
+      <p class="section-label">01</p>
+      <h2>Acceptance of Terms</h2>
+      <p>These terms govern your use of Forge Hub's software, loader, and any associated services (collectively, "the Software"). Using the Software in any capacity constitutes your agreement to these terms. We may update these terms at any time. Continued use of the Software after changes are posted constitutes acceptance of the revised terms.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 2 -->
+    <div class="section">
+      <p class="section-label">02</p>
+      <h2>Licence & Restrictions</h2>
+      <p>When you obtain a key to access Forge Hub, you are granted a personal, revocable, non-transferable licence to use the Software for your own private use only. You do not own the Software or any part of it.</p>
+      <p>The following are strictly prohibited:</p>
+      <ul>
+        <li>Redistributing, reselling, or sharing the Software or your access key</li>
+        <li>Modifying, decompiling, or reverse engineering any part of the Software</li>
+        <li>Using the Software for commercial gain or on behalf of third parties</li>
+        <li>Attempting to bypass, circumvent, or interfere with the key system or any security mechanism</li>
+        <li>Using third-party tools to intercept, replicate, or disrupt the normal operation of the Software</li>
+      </ul>
+      <p>Violation of any of the above may result in immediate and permanent revocation of access without notice or refund.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 3 -->
+    <div class="section">
+      <p class="section-label">03</p>
+      <h2>Access & Revocation</h2>
+      <p>We reserve the right to suspend, restrict, or permanently revoke your access to the Software at any time, with or without notice, and with or without reason. This includes, but is not limited to, cases where we determine that you have violated these terms or acted in a way that negatively affects the integrity or security of the platform.</p>
+      <p>Bypassing the key system or Lootlabs ad flow is grounds for an automatic ban. Ban lengths escalate with repeat offences and are non-negotiable.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 4 -->
+    <div class="section">
+      <p class="section-label">04</p>
+      <h2>Service Availability</h2>
+      <p>We may modify, suspend, or discontinue the Software or any of its features at any time. We do not guarantee uninterrupted availability and are not liable for any downtime, data loss, or disruption to service.</p>
+      <p>Where the terms "Lifetime" or "Permanent" are used in relation to a key or licence, these refer to the period during which Forge Hub actively maintains and operates the Software, not an unconditional guarantee of indefinite access.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 5 -->
+    <div class="section">
+      <p class="section-label">05</p>
+      <h2>Data Collection</h2>
+      <p>To operate and secure the platform, Forge Hub collects the following data at the time of execution:</p>
+      <ul>
+        <li>Hardware ID (HWID)</li>
+        <li>Executor name</li>
+        <li>Game server Job ID</li>
+        <li>Your active key</li>
+        <li>Execution timestamp</li>
+      </ul>
+      <p>If suspicious activity is detected, additional data including connection information may be logged for the purposes of security review. This data is used solely to protect the integrity of the platform and is not sold to third parties.</p>
+      <p>We process this data in accordance with applicable UK and EU privacy law, including the UK GDPR and the EU General Data Protection Regulation.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 6 -->
+    <div class="section">
+      <p class="section-label">06</p>
+      <h2>Account Risk</h2>
+      <p>Forge Hub's Software is designed to avoid triggering automatic anticheat systems. However, we make no guarantees regarding the safety of your Roblox account. Using the Software visibly in public servers may result in manual reports from other players, which could lead to action taken by Roblox. You use the Software at your own risk, and Forge Hub accepts no liability for any account suspensions, bans, or other consequences arising from your use.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 7 -->
+    <div class="section">
+      <p class="section-label">07</p>
+      <h2>Limitation of Liability</h2>
+      <p>Forge Hub is provided as-is. To the fullest extent permitted by law, we exclude all liability for any loss or damage arising from your use of the Software, including but not limited to loss of access, account penalties, data loss, or any indirect or consequential damage.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 8 -->
+    <div class="section">
+      <p class="section-label">08</p>
+      <h2>Support & Contact</h2>
+      <p>For any questions or issues relating to these terms or your use of the Software, please open a support ticket in our Discord server. When doing so, include a clear description of your issue and any relevant details so we can assist you efficiently.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 9 -->
+    <div class="section">
+      <p class="section-label">09</p>
+      <h2>Governing Law</h2>
+      <p>These terms are governed by the laws of England and Wales. Where applicable, EU consumer protection law and the EU GDPR also apply to users located within the European Union. Any disputes arising from these terms shall be subject to the jurisdiction of the courts of England and Wales.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Forge Hub. All rights reserved. &nbsp;·&nbsp; <a href="https://cdn.forgehub.store/terms">cdn.forgehub.store/terms</a></p>
+  </footer>
+
+</body>
+</html>
