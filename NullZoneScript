@@ -1,2 +1,0 @@
--- Forge Hub  |  discord.gg/forgehubrbx
-return loadstring(game:HttpGet("https://fh-scripts.skuppyv3.workers.dev/f/61e280908967b432"))()
